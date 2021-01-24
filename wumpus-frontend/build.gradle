@@ -1,3 +1,7 @@
 plugins {
   id 'de.muspellheim.wumpus.java-library-conventions'
 }
+
+dependencies {
+  implementation project(':wumpus-contract')
+}

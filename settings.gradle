@@ -1,2 +1,2 @@
 rootProject.name = 'wumpus-root'
-include('wumpus', 'wumpus-backend', 'wumpus-frontend')
+include('wumpus', 'wumpus-contract', 'wumpus-backend', 'wumpus-frontend')
