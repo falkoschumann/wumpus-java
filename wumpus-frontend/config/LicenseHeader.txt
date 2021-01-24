@@ -1,0 +1,5 @@
+/*
+ * Hunt the Wumpus - Frontend
+ * Copyright (c) $YEAR Falko Schumann <falko.schumann@muspellheim.de>
+ */
+

@@ -1,0 +1,12 @@
+plugins {
+  id 'de.muspellheim.wumpus.java-application-conventions'
+}
+
+dependencies {
+  implementation project(':wumpus-backend')
+  implementation project(':wumpus-frontend')
+}
+
+application {
+  mainClass = 'de.muspellheim.wumpus.App'
+}
