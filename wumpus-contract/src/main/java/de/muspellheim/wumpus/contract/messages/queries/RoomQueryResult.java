@@ -12,9 +12,9 @@ import lombok.Value;
 @Value
 public class RoomQueryResult {
   int room;
-  int tunnel1LeadTo;
-  int tunnel2LeadTo;
-  int tunnel3LeadTo;
+  int tunnel1LeadsTo;
+  int tunnel2LeadsTo;
+  int tunnel3LeadsTo;
   @NonNull Set<Warning> warnings;
 
   enum Warning {

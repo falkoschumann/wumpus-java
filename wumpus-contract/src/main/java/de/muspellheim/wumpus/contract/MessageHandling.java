@@ -3,7 +3,7 @@
  * Copyright (c) 2021 Falko Schumann <falko.schumann@muspellheim.de>
  */
 
-package de.muspellheim.wumpus.contract.messages;
+package de.muspellheim.wumpus.contract;
 
 import de.muspellheim.wumpus.contract.messages.commands.CommandStatus;
 import de.muspellheim.wumpus.contract.messages.commands.MoveCommand;
