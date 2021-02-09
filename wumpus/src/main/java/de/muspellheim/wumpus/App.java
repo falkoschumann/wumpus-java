@@ -5,18 +5,13 @@
 
 package de.muspellheim.wumpus;
 
-import static de.muspellheim.wumpus.MessageUtils.getMessage;
-import static de.muspellheim.wumpus.frontend.StringUtils.join;
-import static de.muspellheim.wumpus.frontend.StringUtils.split;
-
-import de.muspellheim.wumpus.backend.LinkedList;
-import org.apache.commons.text.WordUtils;
+import de.muspellheim.wumpus.backend.MessageHandler;
+import de.muspellheim.wumpus.frontend.UserInterface;
 
 public class App {
   public static void main(String[] args) {
-    LinkedList tokens;
-    tokens = split(getMessage());
-    String result = join(tokens);
-    System.out.println(WordUtils.capitalize(result));
+    var backend = new MessageHandler();
+    var frontend = new UserInterface(backend);
+    frontend.run();
   }
 }

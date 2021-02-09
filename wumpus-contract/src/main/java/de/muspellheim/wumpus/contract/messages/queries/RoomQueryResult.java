@@ -5,6 +5,7 @@
 
 package de.muspellheim.wumpus.contract.messages.queries;
 
+import de.muspellheim.wumpus.contract.data.Item;
 import java.util.Set;
 import lombok.NonNull;
 import lombok.Value;
@@ -15,11 +16,5 @@ public class RoomQueryResult {
   int tunnel1LeadsTo;
   int tunnel2LeadsTo;
   int tunnel3LeadsTo;
-  @NonNull Set<Warning> warnings;
-
-  enum Warning {
-    Wumpus,
-    Bat,
-    Pit
-  }
+  @NonNull Set<Item> warnings;
 }
